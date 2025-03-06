@@ -1,10 +1,17 @@
 <template>
-		<div class="tw-p-[20px]">
-			<h1>categorias</h1>
+		<div class="tw-pr-[20px]">
+			<h1 class="tw-text-lg tw-font-semibold tw-mb-[30px]">
+				CATEGORÍAS
+			</h1>
 			<q-list>				
 				<template v-for="category in categories">
 					<q-expansion-item
+						class="expansion-item"
 						:label="category.label"
+						header-class="tw-text-lg tw-text-sm"
+						expand-icon="fa-solid fa-caret-down"
+						expand-icon-class="expand-icon"
+						expand-separator
 					/>
 				</template>				
 			</q-list>          
@@ -49,6 +56,8 @@ import apiRoutes from '../../config/apiRoutes'
 	})
 
   </script>
- <style>
-	
+<style>
+.expand-icon > i {
+  font-size: 15px !important; /* Cambia el tamaño del icono aquí */
+}
 </style>

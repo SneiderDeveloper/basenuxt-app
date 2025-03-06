@@ -21,18 +21,26 @@
   	<div class="
 			tw-grid
 			tw-grid-cols-1
-			md:tw-grid-cols-2
-			lg:tw-grid-cols-3
-			xl:tw-grid-cols-4
-			tw-gap-4"
+			md:tw-grid-cols-1
+			lg:tw-grid-cols-2
+			xl:tw-grid-cols-3
+			tw-gap-10"
 		>
-			<q-card v-for="product in products" class="product q-pa-md">
+			<q-card 
+				v-for="product in products" 
+				class="
+					product 
+					tw-p-4 
+					tw-rounded-2xl
+					tw-w-[390px]
+				"
+			>
 				<div>
-					<span class="tw-text-[12] tw-font-[700]" style="color: #888888">{{ product.name }}</span>
+					<span class="tw-text-sm tw-font-bold" style="color: #888888">{{ product.name }}</span>
 				</div>
 				<div class="tw-flex tw-justify-between tw-align-middle">
 					<div>
-						<span class="tw-text-[30px] tw-font-[600]">16GB</span>
+						<span class="tw-text-[40px] tw-font-semibold">16GB</span>
 					</div>
 					<div>
 						<img src="../../assets/img/cP_white.png" />
@@ -55,9 +63,15 @@
 						<q-btn
 							label="Ver Planes"
 							text-color="black"
+							color="silver"
 							no-caps
-
-							class="tw-w-1/2 tw-justify-center tw-text-black"
+							unelevated
+							class="
+								tw-w-2/3 
+								tw-justify-center
+								tw-font-bold
+								tw-rounded-lg
+							"
 						/>
 						<q-btn
 							label="Añadir"
@@ -66,7 +80,12 @@
 							no-caps
 							icon="o_shopping_cart"
 							unelevated
-							class="tw-w-1/2 tw-justify-center tw-text-black"
+							class="
+								tw-w-2/3 
+								tw-justify-center
+								tw-font-bold
+								tw-rounded-lg
+							"
 						/>
 					</div>
 			</q-card>
@@ -113,9 +132,10 @@ import apiRoutes from '../../config/apiRoutes'
 
   </script>
  <style>
- .product {
+ 	.product {
 		.description ul {
 			@apply tw-list-disc
 		}
+		box-shadow: 0px 10px 104px rgba(0, 0, 0, 0.07), 0px 3.85185px 33.1259px rgba(0, 0, 0, 0.0425185), 0px 0.814815px 8.47407px rgba(0, 0, 0, 0.0274815);
 	}
 </style>
