@@ -66,6 +66,45 @@
                 "
             />
         </div>
-        <hr />
+        <div class="tw-flex tw-text-base tw-text-[#B4B4B4] tw-border">
+            <section class="tw-text-base">
+                <p>Líneas móviles</p>
+                <div>
+                    <span>Ventas: </span>
+                    <span class="tw-font-semibold">317 450 8140</span>
+                </div>
+                <div>
+                    <span>Soporte: </span>
+                    <span class="tw-font-semibold">300 782 6387</span>
+                </div>
+                <div>
+                    <span>Proyectos: </span>
+                    <span class="tw-font-semibold">300 782 6387</span>
+                </div>
+                <div>
+                    <span>Marketing: </span>
+                    <span class="tw-font-semibold">300 782 6387</span>
+                </div>
+            </section>
+            <section class="tw-flex tw-flex-col tw-items-center">
+                <span>• Recibe todas las Novedades •</span>
+                <q-btn
+                    label="Click aquí"
+                    text-color="white"
+                    no-caps
+                    unelevated
+                    class="
+                        tw-w-[121px]
+                        tw-justify-center
+                        tw-text-base
+                        tw-rounded-full
+                        tw-mb-8
+                        tw-bg-[#DC3545]
+                    "
+                />
+                <span>• Otros Enlaces •</span>
+                <a>Informe Bic 2024</a>
+            </section>
+        </div>
     </div>
 </template>
